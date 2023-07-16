@@ -17,7 +17,7 @@ contract SaleAnimalToken {
     // 프론트엔드에서 이 배열을 가지고 어떤게 판매 중인지 확인
     uint256[] public onSaleAnimalTokenArray;
 
-    // 판매 등록하는 함수 
+    // 판매 등록 함수 
     function setForSaleAnimalToken(uint256 _animalTokenId, uint256 _price) public {
         // 제공하는 ownerOf()를 통해 tokenId로 address를 받아옴
         address animalTokenOwner = mintAnimalTokenAddress.ownerOf(_animalTokenId);
