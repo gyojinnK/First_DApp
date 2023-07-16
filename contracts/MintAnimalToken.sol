@@ -21,6 +21,8 @@ contract MintAnimalToken is ERC721Enumerable {
         // 1~5까지의 랜덤한 수를 만들 때
         uint256 animalType = uint256(keccak256(abi.encodePacked(block.timestamp, msg.sender, animalTokenId))) % 5 + 1;
        
+        // 토큰id를 인덱스로 사용하는 배열
+        // type을 대입 
         animalTypes[animalTokenId] = animalType;
 
         // ERC721에서 제공하는 mint 함수
