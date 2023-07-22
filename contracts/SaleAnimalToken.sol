@@ -12,6 +12,7 @@ contract SaleAnimalToken {
     }
 
     // animalToken을 입력하면 가격을 반환하는 mapping
+    // mapping은 하나의 자료구조라고 생각하기
     mapping(uint256 => uint256) public animalTokenPrices;
 
     // 프론트엔드에서 이 배열을 가지고 어떤게 판매 중인지 확인
