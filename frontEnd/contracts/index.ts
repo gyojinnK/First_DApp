@@ -528,5 +528,6 @@ const saleAnimalTokenAbi: AbiItem[] = [
     },
 ];
 
+// TokenAddress를 포함할 변수 선언
 const mintAnimalTokenAddress = "";
 const saleAnimalTokenAddress = "";
